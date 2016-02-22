@@ -29,6 +29,13 @@ import query.util.TranCanFireQuerySpecification;
 
 public class BusTest {
 	DesignSpaceExplorer dse;
+	//Szabály alapú tervezésitér-bejárás tesztelése
+	//cím saját név bsc önlab konzulens
+	//bevezetés mi a probléma mi a dse
+	//viatra dse keretrendszer tesztelésével foglalkozom
+	//a felhasználó ellenőrizni tudja hogy jól definiálta-e a problémát
+	//integrációs tesztelése a keretrendszernek
+	//mivel nagoyn sok paramétre van ezért sok teszteset van ezeket karban kell tartani valamilyen kódgenerálás
 	@Before
 	public void setUp() throws IncQueryException {
 		 dse= new DesignSpaceExplorer();
@@ -86,5 +93,5 @@ public class BusTest {
     public void BFS() throws IncQueryException {
         dse.startExploration(Strategies.createBFSStrategy(4));
     }
-  
+   // papíron végigellenőrizni
 }
