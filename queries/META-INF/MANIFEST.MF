@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: queries
+Bundle-SymbolicName: queries;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.incquery.runtime,
+ org.eclipse.xtext.xbase.lib
+Import-Package: PetriNet,
+ org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

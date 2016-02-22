@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bus
+Bundle-SymbolicName: bus
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: bus.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.viatra.dse.base,
+ org.eclipse.emf.ecore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: PetriNet,
+ org.eclipse.viatra.dse.base

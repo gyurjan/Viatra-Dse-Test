@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Petrinet.Querie&apos;&#x0D;&#x0A;- Original project: &apos;Petrinet.Querie&apos;&#x0D;&#x0A;- Original element: &apos;Petrinet.Querie/src/Petrinet.Querie.queries&apos;" description="Delete element" element1="/src&lt;Petrinet.Querie.queries" element2="/src&lt;Petrinet.Querie" element3="/src&lt;Petrinet" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1428292236469" subPackages="false" version="1.0"/>
+</session>

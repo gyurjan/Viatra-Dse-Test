@@ -1,0 +1,39 @@
+package petrinet;
+import "Petrinet";
+pattern places(P:Place) {
+	Place(P);	
+}
+pattern placetoTransition(T:Transition,P:Place) {
+	Transition.input(T,P);
+}
+pattern transitiontoPlace(T:Transition,P:Place) {
+	Transition.output(T,P);
+}
+pattern whereToken(P:Place, T:Token) {
+	Place.tokens(P,T);
+}
+pattern emptyPlace(P:Place) {
+	neg find whereToken(P,T);
+}
+
+pattern tranCanFire(T:Transition) {
+    find placetoTransition(T,P1);
+    neg find emptyPlace(P1);
+}
+pattern placeEndName(P:Place) {
+	Place.name(P,"Person on bus");
+} or {	
+	Place.name(P,"Bus leaving");
+}
+pattern allTokenEnd() {
+	find emptyPlace(P);
+} or {
+	find placeEndName(P);
+	
+}
+
+
+//tüzelhetõ egy tran
+//példánymodel befejezés
+//incquery ismerkedls
+//java api 

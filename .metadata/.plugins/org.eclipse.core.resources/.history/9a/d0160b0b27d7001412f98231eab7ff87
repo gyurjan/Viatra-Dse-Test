@@ -1,0 +1,26 @@
+package swing;
+
+import java.util.regex.Pattern;
+
+
+
+public class proba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a=new String("sdfsf-98");
+		a="(1) 412-211";
+		String reg="\\([0-9]{1,2}\\) [0-9]{3}\\-[0-9]{3,4}";
+		String s="select persons.person_id,persons.name, places.NAME, places.PLACE_TYPE" +
+				"from persons, visits, places" +
+				"where visits.PERSON_ID=persons.PERSON_ID and"
+					+ " visits.last_visit-first_visit>365*4+365/2 and "
+						+ "places.PLACE_TYPE like '%diszkó%' and "
+							+ "places.PLACE_ID=visits.PLACE_ID"
+				+"Group by persons.person_id,persons.name, places.NAME, places.PLACE_TYPE"
+				+"Order by persons.name";
+		boolean p=Pattern.matches(reg, a);
+		System.out.println(s);
+	}
+
+}

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Petrinet.Querie
+Bundle-SymbolicName: Petrinet.Querie;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Export-Package: query,
+ query.util
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.incquery.runtime,
+ org.eclipse.xtext.xbase.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: PetriNet,
+ org.apache.log4j

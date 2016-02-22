@@ -1,0 +1,21 @@
+package swing;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.regex.Pattern;
+
+
+
+public class proba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		java.util.List<String> A=new ArrayList<String>();
+		A.add("mivan");
+		java.util.List<String> B=A;
+		B.remove(0);
+		System.out.println(A.get(0));
+	}
+
+}

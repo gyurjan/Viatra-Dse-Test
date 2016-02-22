@@ -1,0 +1,98 @@
+package bus;
+
+import java.util.ArrayList;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.incquery.runtime.exception.IncQueryException;
+import org.eclipse.viatra.dse.api.DSETransformationRule;
+import org.eclipse.viatra.dse.api.DesignSpaceExplorer;
+import org.eclipse.viatra.dse.api.Strategies;
+import org.eclipse.viatra.dse.objectives.impl.ModelQueriesHardObjective;
+import org.eclipse.viatra.dse.solutionstore.SimpleSolutionStore;
+import org.eclipse.viatra.dse.statecode.IStateCoderFactory;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import PetriNet.PetriNetFactory;
+import PetriNet.PetriNetPackage;
+import PetriNet.Place;
+import PetriNet.Token;
+import PetriNet.Transition;
+import bus.serializer.BusSerielFactory;
+import query.TranCanFireMatch;
+import query.TranCanFireMatcher;
+import query.util.AllTokenEndQuerySpecification;
+import query.util.TranCanFireProcessor;
+import query.util.TranCanFireQuerySpecification;
+
+public class BusTest {
+	DesignSpaceExplorer dse;
+	//Szabály alapú tervezésitér-bejárás tesztelése
+	//cím saját név bsc önlab konzulens
+	//bevezetés mi a probléma mi a dse
+	//viatra dse keretrendszer tesztelésével foglalkozom
+	//a felhasználó ellenőrizni tudja hogy jól definiálta-e a problémát
+	//integrációs tesztelése a keretrendszernek
+	//mivel nagoyn sok paramétre van ezért sok teszteset van ezeket karban kell tartani valamilyen kódgenerálás
+	@Before
+	public void setUp() throws IncQueryException {
+		 dse= new DesignSpaceExplorer();
+		PetriModel pm=new PetriModel();		
+		EObject root =pm.createModel();
+		dse.setInitialModel(root);
+		DSETransformationRule<TranCanFireMatch, TranCanFireMatcher> rule = 
+			    new DSETransformationRule<TranCanFireMatch,TranCanFireMatcher>(
+			    		TranCanFireQuerySpecification.instance(), new TranCanFireProcessor() {
+			 
+			        @Override
+			        public void process(final Transition pT) {
+			           EList<Place> places=pT.getInput();
+			           for (int i=0; i<places.size(); i++) {
+			        	   EList<Token> tokens=places.get(i).getTokens();
+			        	   tokens.remove(tokens.size()-1);
+			           }
+			           PetriNetFactory factory = PetriNetFactory.eINSTANCE;
+			           places=pT.getOutput();
+			           for (int i=0; i<places.size(); i++) {
+			        	   EList<Token> tokens=places.get(i).getTokens();
+			        	   tokens.add(factory.createToken());			        	   
+			           }
+			            
+			        }
+			    });
+			 
+		dse.addTransformationRule(rule);
+		
+		dse.addObjective(new ModelQueriesHardObjective("MyHardObjective")
+	    .withConstraint(AllTokenEndQuerySpecification.instance()));
+		
+		//szélességi, mélységi próbálás
+		//nagyobb model több token
+		//megállás
+		//állapotkódolás
+		ArrayList<EPackage> metaModelPackages = new ArrayList<EPackage>();
+		metaModelPackages.add(PetriNetPackage.eINSTANCE);
+		dse.setSerializerFactory((IStateCoderFactory) new BusSerielFactory());
+		dse.setSolutionStore(new SimpleSolutionStore(1));
+		dse.setMaxNumberOfThreads(1);
+	
+		
+	}
+	
+	@Test
+    public void DFS() throws IncQueryException {
+        dse.startExploration(Strategies.createDFSStrategy(4));
+    	String s=dse.prettyPrintSolutions();
+		System.out.println(s);
+       
+    }
+
+    @Test
+    public void BFS() throws IncQueryException {
+        dse.startExploration(Strategies.createBFSStrategy(4));
+    }
+   // papíron végigellenőrizni
+}

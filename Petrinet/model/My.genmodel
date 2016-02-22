@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Petrinet/src-gen" modelPluginID="Petrinet" modelName="My"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>My.ecore</foreignModel>
+  <genPackages prefix="PetriNet" disposableProviderFactory="true" ecorePackage="My.ecore#/">
+    <genClasses ecoreClass="My.ecore#//PetriNet">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//PetriNet/transitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//PetriNet/places"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Token"/>
+    <genClasses ecoreClass="My.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Place/tokens"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Place/name"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Transition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Transition/input"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Transition/output"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Transition/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

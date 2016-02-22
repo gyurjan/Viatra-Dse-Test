@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/enabled=true
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/isSystem=false
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/name=EMF-IncQuery
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/nickname=EMF-IncQuery
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/suffix=content.xml
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/uri=https\://hudson.eclipse.org/incquery/job/incquery-master/lastSuccessfulBuild/artifact/update-site/
+repositories/https\:__hudson.eclipse.org_incquery_job_incquery-master_lastSuccessfulBuild_artifact_update-site/version=1.0.0

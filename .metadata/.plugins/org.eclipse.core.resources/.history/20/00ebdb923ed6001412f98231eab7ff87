@@ -1,0 +1,14 @@
+package swing;
+
+public class proba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a=new String("sdfsf-98");
+		a="(1) 412-2123";
+		String reg="\\([0-9]{1,2}\\) [0-9]{3}\\-[0-9]{3,4}";
+		System.out.println(reg);
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package swing;
+
+public class proba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a=new String("sdfsf-98");
+		a="UPDATE Persons SET name=?, address=?, phone=?, income=?, hobby=? ,favourite_movie=?)"
+				+ " where person_id=?";
+		System.out.println(a);
+	}
+
+}

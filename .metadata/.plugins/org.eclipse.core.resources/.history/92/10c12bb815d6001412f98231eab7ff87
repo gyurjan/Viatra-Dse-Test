@@ -1,0 +1,539 @@
+/**
+ * This skeleton is provided for the Software Laboratory 5 course. Its structure
+ * should provide a general guideline for the students. Though we were trying to
+ * create a good example application here, the code is probably not suitable for
+ * a real life application.
+ * 
+ * Written by
+ * 	Gergely J. HorvĂˇth
+ * 	RichĂˇrd Milanovits
+ * Based on the previous version by
+ * 	Ă�dĂˇm KollĂˇr
+ * Revised by
+ * 	Roland Kamaras
+ */
+
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Component;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
+import javax.swing.table.DefaultTableModel;
+
+// Application class
+public class MySzorakApplication extends javax.swing.JFrame {
+	ResultSet places;
+	// As suggested by the Swing model, we'll have a GUI + controllers class
+	// (this one, that also includes the entry point) and a model.
+	protected MySzorakModel model;
+
+	// GUI components
+
+	JPanel northPanel;
+	// Connection panel
+	protected JPanel connectionPanel;
+	protected JTextField userNameField;
+	protected JTextField passwordField;
+	protected JButton connectButton;	
+	protected JLabel connectionStateLabel;
+	
+	// New person
+	protected JPanel personAdding;
+	protected JButton addP;
+	protected JLabel azon;
+	protected JTextField azonField;
+	protected JLabel nev;
+	protected JTextField nevField;
+	protected JLabel adress;
+	protected JTextField addressField;
+	protected JLabel phone;
+	protected JTextField phoneField;
+	protected JLabel income;
+	protected JTextField incomeField;
+	protected JLabel hobby;
+	protected JTextField hobbyField;
+	protected JLabel favorite;
+	protected JTextField favoriteField;
+	// JPanel
+ 	protected JPanel listPanel;
+ 	protected JButton listPlaces;
+ 	protected JTextField placefind;
+ 	protected JButton searchPlace;
+
+	// Tabbed pane
+	protected JTabbedPane tabbedPane;
+
+	// Log tab
+	protected JPanel logTab;
+	protected JScrollPane logScrollPanel;
+	protected JTextArea logTextArea;
+
+	// Search tab
+	protected JPanel searchTab;
+	protected JPanel searchInputPanel;
+	protected JTextField keywordField;
+	protected JButton searchButton;
+	protected JScrollPane searchScrollPanel;
+	protected JTable searchTable;
+
+	
+
+	// Class constructor
+	public MySzorakApplication() {
+		model = new MySzorakModel(this);
+		
+	}
+
+	// Entry point for the application
+	public static void main(String[] args) {
+
+		// Create a new instance of the Runnable class and show it
+		SwingUtilities.invokeLater(new 
+
+			// Create an embedded Runnable class
+			Runnable() {
+
+				// Display GUI window
+				public void run() {
+					MySzorakApplication instance = new MySzorakApplication();
+
+					// Populate the JFrame with a nice GUI
+					instance.createGUI();
+
+					// Make it reasonably big
+					instance.setSize(600, 500);
+
+					// Center the window and show it
+					instance.setLocationRelativeTo(null);
+					instance.setVisible(true);
+				}
+
+			}
+
+		);
+	}
+
+	// Create the GUI
+	protected void createGUI() {
+
+		// Create all the GUI components
+		northPanel=new JPanel();
+		// Connection panel
+		connectionPanel = new JPanel();
+		userNameField = new JTextField();
+		passwordField = new JTextField();
+		connectButton = new JButton();
+		connectionStateLabel = new JLabel();
+		
+		//Person add
+		personAdding=new JPanel();
+		azon=new JLabel();
+		azon.setText("ID:");
+		addP=new JButton();
+		addP.setText("Add Person");
+		azonField=new JTextField();
+		nev=new JLabel();
+		nev.setText("Name:");
+		nevField=new JTextField();
+		adress=new JLabel();
+		adress.setText("Address:");
+		addressField=new JTextField();
+		phone=new JLabel();
+		phone.setText("Phone:");
+		phoneField=new JTextField();
+		income=new JLabel();
+		income.setText("Income:");
+		incomeField=new JTextField();
+		hobby=new JLabel();
+		hobby.setText("Hobby:");
+		hobbyField=new JTextField();
+		favorite=new JLabel();
+		favorite.setText("Favorite movie:");
+		favoriteField=new JTextField();
+		
+		personAdding.setLayout(new FlowLayout());
+		personAdding.add(addP);
+		personAdding.add(azon);
+		personAdding.add(azonField);
+		personAdding.add(nev);
+		personAdding.add(nevField);
+		personAdding.add(adress);
+		personAdding.add(addressField);
+		personAdding.add(phone);
+		personAdding.add(phoneField);
+		personAdding.add(income);
+		personAdding.add(incomeField);
+		personAdding.add(hobby);
+		personAdding.add(hobbyField);
+		personAdding.add(favorite);
+		personAdding.add(favoriteField);
+		
+		
+		
+		
+		
+		//List panel
+		listPanel=new JPanel();
+		listPlaces=new JButton();
+		listPlaces.setText("List Places");
+		placefind=new JTextField();
+		searchPlace=new JButton();
+		searchPlace.setText("Search Place");
+
+		// Tabbed pane
+		tabbedPane = new JTabbedPane();
+
+		// Log tab
+		logTab = new JPanel();
+		logScrollPanel = new JScrollPane();
+		logTextArea = new JTextArea();
+
+		// Search tab
+		searchTab = new JPanel();
+		searchInputPanel = new JPanel();
+		keywordField = new JTextField();
+		searchButton = new JButton();		
+		searchScrollPanel = new JScrollPane();
+		searchTable = new JTable();
+
+		// Set the CloseOperation to call dispose() on close
+		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+		// Set the minimum window size
+		setMinimumSize(new java.awt.Dimension(600, 500));
+		setPreferredSize(new java.awt.Dimension(600, 500));
+
+		// Placing GUI elements
+		northPanel.setLayout(new BorderLayout());
+		northPanel.add(connectionPanel,BorderLayout.NORTH);
+
+		// This is the panel for the connection options
+		connectionPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+		connectionPanel.setLayout(new BoxLayout(connectionPanel, BoxLayout.LINE_AXIS));
+		
+		listPanel.setLayout(new FlowLayout());
+		northPanel.add(listPanel,BorderLayout.CENTER);
+		northPanel.add(personAdding,BorderLayout.SOUTH);
+
+		// Username field
+		userNameField.setMaximumSize(new java.awt.Dimension(200, 27));
+		userNameField.setMinimumSize(new java.awt.Dimension(100, 27));
+		userNameField.setPreferredSize(new java.awt.Dimension(150, 27));
+
+		userNameField.setText("");
+
+		// Add username field to the connection panel
+		connectionPanel.add(userNameField);
+
+		// Password field
+		passwordField.setMaximumSize(new java.awt.Dimension(200, 27));
+		passwordField.setMinimumSize(new java.awt.Dimension(100, 27));
+		passwordField.setPreferredSize(new java.awt.Dimension(150, 27));
+
+		passwordField.setText("");
+
+		// Add password field to the connection panel
+		connectionPanel.add(passwordField);
+
+		// Connect button
+		connectButton.setMnemonic('c');
+		connectButton.setText("Connect");
+
+		// Connect button action listener
+		connectButton.addActionListener(new java.awt.event.ActionListener() {
+
+			// Action performed method
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				connectButtonActionPerformed(evt);
+			}
+		});
+		
+		// listPlaces button action listener
+		listPlaces.addActionListener(new java.awt.event.ActionListener() {
+			
+			// Action performed method
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				listPlacesActionPerformed(evt);
+			}
+		});
+		// searchPlace button action listener
+		searchPlace.addActionListener(new java.awt.event.ActionListener() {
+			
+			// Action performed method
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				searchPlaceActionPerformed(evt);
+			}
+						
+		});
+		addP.addActionListener(new java.awt.event.ActionListener() {
+			
+			// Action performed method
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				addPActionPerformed(evt);
+			}
+		});
+
+		// Add connect button to the connection panel
+		connectionPanel.add(connectButton);
+		
+		//Add listPlaces button to the list panel
+		listPanel.add(listPlaces);
+		listPanel.add(placefind);
+		listPanel.add(searchPlace);
+		listPanel.add(addP);
+		placefind.setMaximumSize(new java.awt.Dimension(200, 27));
+		placefind.setMinimumSize(new java.awt.Dimension(100, 27));
+		placefind.setPreferredSize(new java.awt.Dimension(150, 27));
+
+		// Little label to show the connection status
+		connectionStateLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		connectionStateLabel.setText("<html>Connection: <font color=\"red\">disconnected</font>");
+		connectionStateLabel.setMinimumSize(new java.awt.Dimension(200, 17));
+		connectionStateLabel.setPreferredSize(new java.awt.Dimension(200, 17));
+
+		// Add connection status label to the connection panel
+		connectionPanel.add(connectionStateLabel);
+
+		// Finally put the connection panel on the window
+		getContentPane().add(northPanel, java.awt.BorderLayout.PAGE_START);
+		
+		
+		
+
+		// Now we create a tabbed pane for the tabs
+		tabbedPane.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+
+		// First a nice tab for logging
+		logTab.setLayout(new java.awt.BorderLayout());
+
+		// Log scroll panel
+		logScrollPanel.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+		// Log text area
+		logTextArea.setEditable(false);
+		logTextArea.setColumns(20);
+		logTextArea.setRows(5);
+		logTextArea.setTabSize(4);
+
+		// Locate the tab
+		logScrollPanel.setViewportView(logTextArea);
+		logTab.add(logScrollPanel, java.awt.BorderLayout.CENTER);
+		tabbedPane.addTab("Log", logTab);
+
+		// Then a search tab for searching
+		searchTab.setLayout(new BoxLayout(searchTab, BoxLayout.PAGE_AXIS));
+
+		// Search input panel
+		searchInputPanel.setLayout(new BoxLayout(searchInputPanel, BoxLayout.LINE_AXIS));
+
+		// Search keyword field
+		searchInputPanel.add(keywordField);
+
+		// Search button
+		searchButton.setMnemonic('k');
+		searchButton.setText("Search");
+
+		// Search button action listener
+		searchButton.addActionListener(new java.awt.event.ActionListener() {
+
+			// Action performed method
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				searchButtonActionPerformed(evt);
+			}
+		});
+
+		// Add search button to the input panel
+		searchInputPanel.add(searchButton);
+
+		// Add search input panel to the search tab
+		searchTab.add(searchInputPanel);
+
+		// Search table
+		searchTable.setModel(new DefaultTableModel(
+				new Object [][] {
+					{null, null, null, null},
+					{null, null, null, null},
+					{null, null, null, null},
+					{null, null, null, null}
+				},
+				new String [] {
+					"Title 1", "Title 2", "Title 3", "Title 4"
+				}
+			)
+			{
+				// Is cell editable
+				@Override
+				public boolean isCellEditable(int rowIndex, int colIndex) {
+					return false;
+				}
+			}
+		);
+
+		// Locate the tab
+		searchScrollPanel.setViewportView(searchTable);
+		searchTab.add(searchScrollPanel);
+		tabbedPane.addTab("Search", searchTab);
+
+		// !TODO: This is the place you should add your other tabs (like edit)
+
+		// Finally add the tabbed pane to the window and pack the layout
+		getContentPane().add(tabbedPane, java.awt.BorderLayout.CENTER);
+		pack();
+
+		// Here you could set the look and feel, etc.
+	}
+
+	/**
+	 * This is called whenever the connect button is pressed.
+	 * @param event Contains details about the AWT event.
+	 */
+	protected void connectButtonActionPerformed(java.awt.event.ActionEvent event) {
+
+		try {
+
+			// The model's connect method will do everything for us, just call it
+			model.connect(userNameField.getText(), passwordField.getText());
+			connectionStateLabel.setText("<html>Connection: <font color=\"green\">created</font>");
+
+			// Test the connection
+			if (model.testConnection()) {
+				log("Connection seems to be working.");
+			} else {
+				log("It's a TRAP!");
+			}
+
+		} catch (SQLException e) {
+
+			// !TODO: More user friendly error handling
+			log(e.toString());
+
+		} catch (ClassNotFoundException e) {
+
+			// !TODO: More user friendly error handling
+			log(e.toString());
+
+		}
+
+	}
+	/**
+	 * This is called whenever the List Places button is pressed.
+	 * @param event Contains details about the AWT event.
+	 */
+	protected void listPlacesActionPerformed(java.awt.event.ActionEvent event) {
+		
+		try {
+			Statement stmt = model.connection.createStatement();
+			places = stmt.executeQuery("SELECT * FROM Places");
+			query(places);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			log(e.toString());
+			e.printStackTrace();
+		}
+		
+		
+	}
+	private void searchPlaceActionPerformed(ActionEvent evt) {
+		try {
+			PreparedStatement rstmt = model.connection.prepareStatement("SELECT * FROM Places WHERE upper(name) like escape \'\\'");
+			String str=placefind.getText();
+			str=str.toUpperCase();
+			str=str.replace("_","\\_");
+			str=str.replace("%","\\%");
+			log(str);
+			rstmt.setString(1,"%"+str+"%");
+			
+			places = rstmt.executeQuery();
+			query(places);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			log(e.toString());
+			log("Hiba a Place keresesben");
+			e.printStackTrace();
+		}
+		
+	}
+	/**
+	 * This is called whenever the search button is pressed.
+	 * @param event Contains details about the AWT event.
+	 */
+	protected void searchButtonActionPerformed(java.awt.event.ActionEvent event) {
+
+		// Let's grab the TableModel
+		DefaultTableModel tableModel = (DefaultTableModel) searchTable.getModel();
+
+		// Clear all the rows
+		tableModel.setRowCount(0);
+
+		// Then we can add the new ones like this
+		tableModel.addRow(new Object[] {null,null,null,null});
+	}
+	protected void addPActionPerformed(java.awt.event.ActionEvent event) {
+		
+		
+	}
+
+	/**
+	 * Appends the message (with a line break added) to the log.
+	 * @param message The message to be logged.
+	 */
+	protected void log(String message) {
+		logTextArea.append(message + "\n");
+	}
+
+	// Dispose method
+	@Override
+	public void dispose() {
+		super.dispose();
+	}
+	protected void query(ResultSet rs) {
+		try {
+			
+			ResultSetMetaData r=rs.getMetaData();
+			DefaultTableModel dtm = new DefaultTableModel();
+			int numberofColumns=r.getColumnCount();
+			for (int i=1; i<=numberofColumns; i ++) {
+				dtm.addColumn(r.getColumnName(i));
+			}
+			while (rs.next()) {
+				Object [] rowData = new Object[numberofColumns];
+				for (int i = 0; i < rowData.length; ++i)
+                {
+                    rowData[i] = rs.getObject(i+1);
+                }
+				dtm.addRow(rowData);
+			}
+			searchTable.setModel(dtm);
+			dtm.fireTableDataChanged();
+
+		} catch (SQLException e) {
+
+			// !TODO: More user friendly error handling
+			log(e.toString());
+
+		}
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package swing;
+
+import java.util.regex.Pattern;
+
+
+
+public class proba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a=new String("sdfsf-98");
+		a="(1) 412-21232";
+		String reg="\\([0-9]{1,2}\\) [0-9]{3}\\-[0-9]{3,4}";
+		
+		boolean p=Pattern.matches(reg, a);
+		System.out.println(p);
+	}
+
+}
