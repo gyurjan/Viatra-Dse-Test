@@ -7,18 +7,23 @@ import java.util.Comparator;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.incquery.runtime.api.IPatternMatch;
 import org.eclipse.viatra.dse.api.DSEException;
-import org.eclipse.viatra.dse.statecode.IStateSerializer;
+import org.eclipse.viatra.dse.statecode.IStateCoder;
 
-import query.TranCanFireMatch;
 import PetriNet.PetriNet;
 import PetriNet.Place;
+import query.TranCanFireMatch;
 
-public class BusSeril implements IStateSerializer {
+public class BusSeril implements IStateCoder {
 	
 	private PetriNet pm;
 	private ArrayList<Place> places;
-	public BusSeril(Notifier root) {
-		pm = (PetriNet) root;
+	
+
+	
+	@Override
+	public void init(Notifier notifier) {
+		// TODO Auto-generated method stub
+		pm = (PetriNet) notifier;
 		places=new ArrayList<Place>();
 		places.addAll(pm.getPlaces());
 		Collections.sort(places, new Comparator<Place>() {
@@ -30,32 +35,26 @@ public class BusSeril implements IStateSerializer {
 		});
 	}
 	@Override
-	public Object serializeContainmentTree() {
+	public Object createStateCode() {
 		// TODO Auto-generated method stub		
-		String s="";
-		for (int i=0; i<places.size(); i++) {
-			s=s+Integer.toString(i)+":"+Integer.toString(places.get(i).getTokens().size())+",";
-		}
-		return s;
+				String s="";
+				for (int i=0; i<places.size(); i++) {
+					s=s+Integer.toString(i)+":"+Integer.toString(places.get(i).getTokens().size())+",";
+				}
+				return s;
 	}
-
 	@Override
-	public Object serializePatternMatch(IPatternMatch match) {
+	public Object createActivationCode(IPatternMatch match) {
 		// TODO Auto-generated method stub
-		//tranzicio
-		if (match instanceof TranCanFireMatch) {
-			TranCanFireMatch tcfm=(TranCanFireMatch) match;
-			return tcfm.getT().getName().trim();
-		}
-		else {
-			throw new DSEException("Unsupported rule.");
-		}		
-	}
-
-	@Override
-	public void resetCache() {
-		// TODO Auto-generated method stub
-		
+				//tranzicio
+				if (match instanceof TranCanFireMatch) {
+					TranCanFireMatch tcfm=(TranCanFireMatch) match;
+					return tcfm.getT().getName().trim();
+				}
+				else {
+					throw new DSEException("Unsupported rule.");
+				}
+			
 	}
 
 }

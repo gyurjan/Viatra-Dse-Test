@@ -3,7 +3,7 @@
 package PetriNet;
 
 import org.eclipse.emf.ecore.EFactory;
-import impl.*;
+
 /**
  * <!-- begin-user-doc -->
  * The <b>Factory</b> for the model.

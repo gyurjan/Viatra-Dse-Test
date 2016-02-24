@@ -5,7 +5,6 @@
 <item elementID="=Petrinet" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Petrinet.Querie" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=hu.bme.Petrinet" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Diagrams" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1425739806915_0" label="Window Working Set" name="Aggregate for window 1425739806914"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1428268199662_2" label="Window Working Set" name="Aggregate for window 1428267918711"/>

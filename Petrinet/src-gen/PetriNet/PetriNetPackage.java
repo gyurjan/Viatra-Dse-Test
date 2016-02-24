@@ -54,15 +54,14 @@ public interface PetriNetPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	PetriNetPackage eINSTANCE =
-			impl.PetriNetPackageImpl.init();
+	PetriNetPackage eINSTANCE = impl.PetriNetPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link PetriNet.impl.PetriNetImpl <em>Petri Net</em>}' class.
+	 * The meta object id for the '{@link impl.PetriNetImpl <em>Petri Net</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see PetriNet.impl.PetriNetImpl
-	 * @see PetriNet.impl.PetriNetPackageImpl#getPetriNet()
+	 * @see impl.PetriNetImpl
+	 * @see impl.PetriNetPackageImpl#getPetriNet()
 	 * @generated
 	 */
 	int PETRI_NET = 0;
@@ -104,11 +103,11 @@ public interface PetriNetPackage extends EPackage {
 	int PETRI_NET_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link PetriNet.impl.TokenImpl <em>Token</em>}' class.
+	 * The meta object id for the '{@link impl.TokenImpl <em>Token</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see PetriNet.impl.TokenImpl
-	 * @see PetriNet.impl.PetriNetPackageImpl#getToken()
+	 * @see impl.TokenImpl
+	 * @see impl.PetriNetPackageImpl#getToken()
 	 * @generated
 	 */
 	int TOKEN = 1;
@@ -132,11 +131,11 @@ public interface PetriNetPackage extends EPackage {
 	int TOKEN_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link PetriNet.impl.PlaceImpl <em>Place</em>}' class.
+	 * The meta object id for the '{@link impl.PlaceImpl <em>Place</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see PetriNet.impl.PlaceImpl
-	 * @see PetriNet.impl.PetriNetPackageImpl#getPlace()
+	 * @see impl.PlaceImpl
+	 * @see impl.PetriNetPackageImpl#getPlace()
 	 * @generated
 	 */
 	int PLACE = 2;
@@ -178,11 +177,11 @@ public interface PetriNetPackage extends EPackage {
 	int PLACE_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link PetriNet.impl.TransitionImpl <em>Transition</em>}' class.
+	 * The meta object id for the '{@link impl.TransitionImpl <em>Transition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see PetriNet.impl.TransitionImpl
-	 * @see PetriNet.impl.PetriNetPackageImpl#getTransition()
+	 * @see impl.TransitionImpl
+	 * @see impl.PetriNetPackageImpl#getTransition()
 	 * @generated
 	 */
 	int TRANSITION = 3;
@@ -374,11 +373,11 @@ public interface PetriNetPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link PetriNet.impl.PetriNetImpl <em>Petri Net</em>}' class.
+		 * The meta object literal for the '{@link impl.PetriNetImpl <em>Petri Net</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see PetriNet.impl.PetriNetImpl
-		 * @see PetriNet.impl.PetriNetPackageImpl#getPetriNet()
+		 * @see impl.PetriNetImpl
+		 * @see impl.PetriNetPackageImpl#getPetriNet()
 		 * @generated
 		 */
 		EClass PETRI_NET = eINSTANCE.getPetriNet();
@@ -400,21 +399,21 @@ public interface PetriNetPackage extends EPackage {
 		EReference PETRI_NET__PLACES = eINSTANCE.getPetriNet_Places();
 
 		/**
-		 * The meta object literal for the '{@link PetriNet.impl.TokenImpl <em>Token</em>}' class.
+		 * The meta object literal for the '{@link impl.TokenImpl <em>Token</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see PetriNet.impl.TokenImpl
-		 * @see PetriNet.impl.PetriNetPackageImpl#getToken()
+		 * @see impl.TokenImpl
+		 * @see impl.PetriNetPackageImpl#getToken()
 		 * @generated
 		 */
 		EClass TOKEN = eINSTANCE.getToken();
 
 		/**
-		 * The meta object literal for the '{@link PetriNet.impl.PlaceImpl <em>Place</em>}' class.
+		 * The meta object literal for the '{@link impl.PlaceImpl <em>Place</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see PetriNet.impl.PlaceImpl
-		 * @see PetriNet.impl.PetriNetPackageImpl#getPlace()
+		 * @see impl.PlaceImpl
+		 * @see impl.PetriNetPackageImpl#getPlace()
 		 * @generated
 		 */
 		EClass PLACE = eINSTANCE.getPlace();
@@ -436,11 +435,11 @@ public interface PetriNetPackage extends EPackage {
 		EAttribute PLACE__NAME = eINSTANCE.getPlace_Name();
 
 		/**
-		 * The meta object literal for the '{@link PetriNet.impl.TransitionImpl <em>Transition</em>}' class.
+		 * The meta object literal for the '{@link impl.TransitionImpl <em>Transition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see PetriNet.impl.TransitionImpl
-		 * @see PetriNet.impl.PetriNetPackageImpl#getTransition()
+		 * @see impl.TransitionImpl
+		 * @see impl.PetriNetPackageImpl#getTransition()
 		 * @generated
 		 */
 		EClass TRANSITION = eINSTANCE.getTransition();

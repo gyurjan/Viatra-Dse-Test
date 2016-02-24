@@ -1,16 +1,15 @@
 package bus.serializer;
 
-import org.eclipse.emf.common.notify.Notifier;
-import org.eclipse.viatra.dse.statecode.IStateSerializer;
-import org.eclipse.viatra.dse.statecode.IStateSerializerFactory;
+import org.eclipse.viatra.dse.statecode.IStateCoder;
+import org.eclipse.viatra.dse.statecode.IStateCoderFactory;
 
-public class BusSerielFactory implements IStateSerializerFactory {
+public class BusSerielFactory implements IStateCoderFactory {
+
 
 	@Override
-	public IStateSerializer createStateSerializer(Notifier modelRoot)
-			throws UnsupportedMetaModel {
+	public IStateCoder createStateCoder() {
 		// TODO Auto-generated method stub
-		BusSeril bs=new BusSeril(modelRoot);
+		BusSeril bs=new BusSeril();
 		return bs;
 	}
 

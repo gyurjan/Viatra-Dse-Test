@@ -15,7 +15,6 @@ pattern whereToken(P:Place, T:Token) {
 pattern emptyPlace(P:Place) {
 	neg find whereToken(P,T);
 }
-
 pattern tranCanFire(T:Transition) {
     find placetoTransition(T,P1);
     neg find emptyPlace(P1);
@@ -25,9 +24,7 @@ pattern placeEndName(P:Place) {
 } or {	
 	Place.name(P,"Bus leaving");
 }
-pattern PlacesWithTokensExceptEndPlaces(P : Place) {
-	
-	
+pattern PlacesWithTokensExceptEndPlaces(P : Place) {	
 	find whereToken(P,_);
 	neg find placeEndName(P);
 }

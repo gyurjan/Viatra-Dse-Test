@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link PetriNet.impl.PetriNetImpl#getTransitions <em>Transitions</em>}</li>
- *   <li>{@link PetriNet.impl.PetriNetImpl#getPlaces <em>Places</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link impl.PetriNetImpl#getTransitions <em>Transitions</em>}</li>
+ *   <li>{@link impl.PetriNetImpl#getPlaces <em>Places</em>}</li>
+ * </ul>
  *
  * @generated
  */

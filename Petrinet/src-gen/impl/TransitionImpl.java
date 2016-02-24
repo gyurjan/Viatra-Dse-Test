@@ -25,12 +25,12 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link PetriNet.impl.TransitionImpl#getInput <em>Input</em>}</li>
- *   <li>{@link PetriNet.impl.TransitionImpl#getOutput <em>Output</em>}</li>
- *   <li>{@link PetriNet.impl.TransitionImpl#getName <em>Name</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link impl.TransitionImpl#getInput <em>Input</em>}</li>
+ *   <li>{@link impl.TransitionImpl#getOutput <em>Output</em>}</li>
+ *   <li>{@link impl.TransitionImpl#getName <em>Name</em>}</li>
+ * </ul>
  *
  * @generated
  */

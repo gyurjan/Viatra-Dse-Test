@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><plugin>
-  <extension id="query.Query" point="org.eclipse.incquery.runtime.queryspecification">
-    <group group="org.eclipse.incquery.runtime.extensibility.SingletonExtensionFactory:query.Query" id="query.Query"/>
-  </extension>
-</plugin>

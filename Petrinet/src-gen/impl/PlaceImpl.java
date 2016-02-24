@@ -28,11 +28,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- *   <li>{@link PetriNet.impl.PlaceImpl#getTokens <em>Tokens</em>}</li>
- *   <li>{@link PetriNet.impl.PlaceImpl#getName <em>Name</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link impl.PlaceImpl#getTokens <em>Tokens</em>}</li>
+ *   <li>{@link impl.PlaceImpl#getName <em>Name</em>}</li>
+ * </ul>
  *
  * @generated
  */

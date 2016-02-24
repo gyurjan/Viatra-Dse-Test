@@ -1,759 +1,4 @@
-!SESSION 2016-02-17 09:27:54.576 -----------------------------------------------
-eclipse.buildId=4.5.1.M20150904-0015
-java.version=1.7.0_79
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
-Framework arguments:  -product org.eclipse.epp.package.modeling.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
-
-This is a continuation of log file D:\workspace\.metadata\.bak_0.log
-Created Time: 2016-02-17 09:32:40.547
-
-!ENTRY org.eclipse.jface 4 0 2016-02-17 09:32:40.547
-!MESSAGE Unable to resolve plug-in "platform:/plugin/org.eclipse.xtend.ide/icons/xtend_file.png".
-!STACK 0
-java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.xtend.ide/icons/xtend_file.png".
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.resolve(PlatformURLPluginConnection.java:77)
-	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:69)
-	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:114)
-	at java.net.URL.openConnection(URL.java:971)
-	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
-	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:207)
-	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:219)
-	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:283)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:525)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:509)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-
-!ENTRY org.eclipse.core.runtime 4 0 2016-02-17 09:32:40.549
-!MESSAGE Invalid input url:platform:/plugin/org.eclipse.xtend.ide/icons/xtend_file.png
-!STACK 0
-java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.xtend.ide/icons/xtend_file.png".
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
-	at org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:290)
-	at org.eclipse.core.runtime.FileLocator.find(FileLocator.java:152)
-	at org.eclipse.jface.resource.URLImageDescriptor.getStream(URLImageDescriptor.java:140)
-	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:105)
-	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:100)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:270)
-	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:291)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:525)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:509)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:971)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:640)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-
-!ENTRY org.eclipse.core.runtime 4 0 2016-02-17 09:32:53.641
-!MESSAGE Invalid input url:platform:/plugin/org.eclipse.incquery.tooling.ui/icons/logo2.png
-!STACK 0
-java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.incquery.tooling.ui/icons/logo2.png".
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
-	at org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:290)
-	at org.eclipse.core.runtime.FileLocator.find(FileLocator.java:152)
-	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:215)
-	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:283)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-
-!ENTRY org.eclipse.jface 4 0 2016-02-17 09:32:53.642
-!MESSAGE Unable to resolve plug-in "platform:/plugin/org.eclipse.incquery.tooling.ui/icons/logo2.png".
-!STACK 0
-java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.incquery.tooling.ui/icons/logo2.png".
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.resolve(PlatformURLPluginConnection.java:77)
-	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:69)
-	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:114)
-	at java.net.URL.openConnection(URL.java:971)
-	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
-	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:207)
-	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:219)
-	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:283)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-
-!ENTRY org.eclipse.core.runtime 4 0 2016-02-17 09:32:53.643
-!MESSAGE Invalid input url:platform:/plugin/org.eclipse.incquery.tooling.ui/icons/logo2.png
-!STACK 0
-java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.incquery.tooling.ui/icons/logo2.png".
-	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
-	at org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:290)
-	at org.eclipse.core.runtime.FileLocator.find(FileLocator.java:152)
-	at org.eclipse.jface.resource.URLImageDescriptor.getStream(URLImageDescriptor.java:140)
-	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:105)
-	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:100)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:270)
-	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:291)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
-	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
-	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
-	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
-	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-17 09:32:58.989
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:35:02.512
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:35:02.512
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.512
-!MESSAGE Software being installed: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.512
-!MESSAGE Missing requirement: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration 0.8.0.201512031219) requires 'bundle org.eclipse.incquery.runtime.evm 0.0.0' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:35:02.512
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.512
-!MESSAGE From: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.512
-!MESSAGE To: org.eclipse.viatra.emf.mwe2integration [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:35:02.675
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:35:02.675
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.675
-!MESSAGE Software being installed: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.675
-!MESSAGE Missing requirement: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration 0.8.0.201512031219) requires 'bundle org.eclipse.incquery.runtime.evm 0.0.0' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:35:02.675
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.675
-!MESSAGE From: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:02.675
-!MESSAGE To: org.eclipse.viatra.emf.mwe2integration [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:35:51.999
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:35:51.999
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:51.999
-!MESSAGE Software being installed: VIATRA DSE framework 0.8.0.201512031219 (org.eclipse.viatra.dse.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:51.999
-!MESSAGE Missing requirement: VIATRA DSE framework Genetic Algorithms 0.8.0.201512031219 (org.eclipse.viatra.dse.genetic 0.8.0.201512031219) requires 'bundle org.eclipse.incquery.runtime [1.1.0,1.2.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:35:51.999
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:51.999
-!MESSAGE From: VIATRA DSE framework 0.8.0.201512031219 (org.eclipse.viatra.dse.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:51.999
-!MESSAGE To: org.eclipse.viatra.dse.genetic [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:35:52.012
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:35:52.012
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:52.012
-!MESSAGE Software being installed: VIATRA DSE framework 0.8.0.201512031219 (org.eclipse.viatra.dse.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:52.012
-!MESSAGE Missing requirement: VIATRA DSE framework Genetic Algorithms 0.8.0.201512031219 (org.eclipse.viatra.dse.genetic 0.8.0.201512031219) requires 'bundle org.eclipse.incquery.runtime [1.1.0,1.2.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:35:52.012
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:52.012
-!MESSAGE From: VIATRA DSE framework 0.8.0.201512031219 (org.eclipse.viatra.dse.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:35:52.012
-!MESSAGE To: org.eclipse.viatra.dse.genetic [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:36:34.723
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:36:34.723
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.723
-!MESSAGE Software being installed: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.723
-!MESSAGE Missing requirement: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration 0.8.0.201512031219) requires 'bundle org.eclipse.incquery.runtime.evm 0.0.0' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:36:34.723
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.723
-!MESSAGE From: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.723
-!MESSAGE To: org.eclipse.viatra.emf.mwe2integration [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:36:34.729
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:36:34.730
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.730
-!MESSAGE Software being installed: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.730
-!MESSAGE Missing requirement: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration 0.8.0.201512031219) requires 'bundle org.eclipse.incquery.runtime.evm 0.0.0' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:36:34.730
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.730
-!MESSAGE From: VIATRA EMF MWE2 Integration 0.8.0.201512031219 (org.eclipse.viatra.emf.mwe2integration.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:36:34.730
-!MESSAGE To: org.eclipse.viatra.emf.mwe2integration [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:38:05.011
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:38:05.011
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE Software being installed: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE Missing requirement: IncQuery Base Pattern Language 1.1.0.201512031022 (org.eclipse.incquery.patternlanguage 1.1.0.201512031022) requires 'bundle org.eclipse.xtext.xbase [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.011
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE From: EMF-IncQuery Runtime - Generic API 1.1.0.201512031022 (org.eclipse.incquery.runtime.generic.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE To: org.eclipse.incquery.patternlanguage [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.011
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE From: EMF-IncQuery SDK without Sources 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE To: org.eclipse.incquery.runtime.generic.feature.feature.group [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.011
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE From: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.011
-!MESSAGE To: org.eclipse.incquery.sdk.feature.feature.group [1.1.0.201512031022]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:38:05.021
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:38:05.021
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE Software being installed: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE Missing requirement: IncQuery Base Pattern Language 1.1.0.201512031022 (org.eclipse.incquery.patternlanguage 1.1.0.201512031022) requires 'bundle org.eclipse.xtext.xbase [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.021
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE From: EMF-IncQuery Runtime - Generic API 1.1.0.201512031022 (org.eclipse.incquery.runtime.generic.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE To: org.eclipse.incquery.patternlanguage [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.021
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE From: EMF-IncQuery SDK without Sources 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE To: org.eclipse.incquery.runtime.generic.feature.feature.group [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.021
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.021
-!MESSAGE From: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.022
-!MESSAGE To: org.eclipse.incquery.sdk.feature.feature.group [1.1.0.201512031022]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:38:05.048
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:38:05.048
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE Software being installed: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE Missing requirement: IncQuery Base Pattern Language 1.1.0.201512031022 (org.eclipse.incquery.patternlanguage 1.1.0.201512031022) requires 'bundle org.eclipse.xtext.xbase [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.048
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE From: EMF-IncQuery Runtime - Generic API 1.1.0.201512031022 (org.eclipse.incquery.runtime.generic.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE To: org.eclipse.incquery.patternlanguage [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.048
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE From: EMF-IncQuery SDK without Sources 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE To: org.eclipse.incquery.runtime.generic.feature.feature.group [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.048
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE From: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.048
-!MESSAGE To: org.eclipse.incquery.sdk.feature.feature.group [1.1.0.201512031022]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:38:05.084
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:38:05.085
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE Software being installed: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE Missing requirement: IncQuery Base Pattern Language 1.1.0.201512031022 (org.eclipse.incquery.patternlanguage 1.1.0.201512031022) requires 'bundle org.eclipse.xtext.xbase [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.085
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE From: EMF-IncQuery Runtime - Generic API 1.1.0.201512031022 (org.eclipse.incquery.runtime.generic.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE To: org.eclipse.incquery.patternlanguage [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.085
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE From: EMF-IncQuery SDK without Sources 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE To: org.eclipse.incquery.runtime.generic.feature.feature.group [1.1.0.201512031022]
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:38:05.085
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE From: EMF-IncQuery SDK 1.1.0.201512031022 (org.eclipse.incquery.sdk.feature.source.feature.group 1.1.0.201512031022)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:38:05.085
-!MESSAGE To: org.eclipse.incquery.sdk.feature.feature.group [1.1.0.201512031022]
-!SESSION 2016-02-17 09:39:47.818 -----------------------------------------------
+!SESSION 2016-02-24 01:47:53.263 -----------------------------------------------
 eclipse.buildId=4.5.1.M20150904-0015
 java.version=1.7.0_79
 java.vendor=Oracle Corporation
@@ -761,201 +6,27 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
 Framework arguments:  -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product -data file:/D:/workspace/ -product org.eclipse.epp.package.modeling.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-17 09:40:14.294
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+This is a continuation of log file D:\workspace\.metadata\.bak_0.log
+Created Time: 2016-02-24 09:48:32.916
 
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:41:58.710
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:41:58.710
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.710
-!MESSAGE Software being installed: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.710
-!MESSAGE Missing requirement: VIATRA-CEP Tooling Core 0.8.0.201512031219 (org.eclipse.viatra.cep.tooling.core 0.8.0.201512031219) requires 'bundle org.eclipse.xtext.ui [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:41:58.710
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.710
-!MESSAGE From: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.710
-!MESSAGE To: org.eclipse.viatra.cep.tooling.core [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:41:58.780
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:41:58.780
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.780
-!MESSAGE Software being installed: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.780
-!MESSAGE Missing requirement: VIATRA-CEP Tooling Core 0.8.0.201512031219 (org.eclipse.viatra.cep.tooling.core 0.8.0.201512031219) requires 'bundle org.eclipse.xtext.ui [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:41:58.780
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.780
-!MESSAGE From: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.780
-!MESSAGE To: org.eclipse.viatra.cep.tooling.core [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:41:58.842
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:41:58.842
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.842
-!MESSAGE Software being installed: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.842
-!MESSAGE Missing requirement: VIATRA-CEP Tooling Core 0.8.0.201512031219 (org.eclipse.viatra.cep.tooling.core 0.8.0.201512031219) requires 'bundle org.eclipse.xtext.ui [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:41:58.842
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.842
-!MESSAGE From: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.842
-!MESSAGE To: org.eclipse.viatra.cep.tooling.core [0.8.0.201512031219]
-
-!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-02-17 09:41:58.852
-!MESSAGE Operation details
-!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-02-17 09:41:58.852
-!MESSAGE Cannot complete the install because one or more required items could not be found.
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.852
-!MESSAGE Software being installed: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.852
-!MESSAGE Missing requirement: VIATRA-CEP Tooling Core 0.8.0.201512031219 (org.eclipse.viatra.cep.tooling.core 0.8.0.201512031219) requires 'bundle org.eclipse.xtext.ui [2.9.0,2.10.0)' but it could not be found
-!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-02-17 09:41:58.852
-!MESSAGE Cannot satisfy dependency:
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.852
-!MESSAGE From: VIATRA CEP framework 0.8.0.201512031219 (org.eclipse.viatra.cep.feature.feature.group 0.8.0.201512031219)
-!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-02-17 09:41:58.852
-!MESSAGE To: org.eclipse.viatra.cep.tooling.core [0.8.0.201512031219]
-!SESSION 2016-02-17 09:42:54.383 -----------------------------------------------
-eclipse.buildId=4.5.1.M20150904-0015
-java.version=1.7.0_79
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
-Framework arguments:  -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product -product org.eclipse.epp.package.modeling.product -data file:/D:/workspace/ -product org.eclipse.epp.package.modeling.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-17 09:43:18.627
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2016-02-17 17:07:35.545 -----------------------------------------------
-eclipse.buildId=4.5.1.M20150904-0015
-java.version=1.7.0_79
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
-Framework arguments:  -product org.eclipse.epp.package.modeling.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-17 17:08:47.462
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2016-02-19 13:57:03.302 -----------------------------------------------
-eclipse.buildId=4.5.1.M20150904-0015
-java.version=1.7.0_79
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
-Framework arguments:  -product org.eclipse.epp.package.modeling.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-19 13:58:09.954
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.incquery.patternlanguage.emf.ui 4 0 2016-02-19 14:13:39.171
-!MESSAGE Guice provision errors:
-
-1) null returned by binding at org.eclipse.xtext.ui.shared.SharedStateModule.configureIWorkbench(SharedStateModule.java:141)
- but org.eclipse.xtext.ui.editor.LanguageSpecificURIEditorOpener.workbench is not @Nullable
-  while locating org.eclipse.ui.IWorkbench
-    for field at org.eclipse.xtext.ui.editor.LanguageSpecificURIEditorOpener.workbench(Unknown Source)
-  while locating org.eclipse.xtext.xbase.ui.jvmmodel.navigation.DerivedMemberAwareEditorOpener
-  while locating org.eclipse.xtext.ui.editor.IURIEditorOpener annotated with @org.eclipse.xtext.ui.LanguageSpecific()
-    for field at org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider.uriEditorOpener(Unknown Source)
-  while locating org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider
-  while locating org.eclipse.xtext.ui.resource.IResourceUIServiceProvider
-
-2) null returned by binding at org.eclipse.xtext.ui.shared.SharedStateModule.configureIWorkbench(SharedStateModule.java:141)
- but org.eclipse.xtext.ui.label.DefaultEditorImageUtil.workbench is not @Nullable
-  while locating org.eclipse.ui.IWorkbench
-    for field at org.eclipse.xtext.ui.label.DefaultEditorImageUtil.workbench(Unknown Source)
-  while locating org.eclipse.xtext.ui.label.DefaultEditorImageUtil
-    for field at org.eclipse.xtext.ui.label.DefaultDescriptionLabelProvider.imageUtil(Unknown Source)
-  while locating org.eclipse.incquery.patternlanguage.emf.ui.labeling.EMFPatternLanguageDescriptionLabelProvider
-  while locating org.eclipse.jface.viewers.ILabelProvider annotated with @org.eclipse.xtext.ui.resource.ResourceServiceDescriptionLabelProvider()
-    for field at org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider.descriptionLabelProvider(Unknown Source)
-  while locating org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider
-  while locating org.eclipse.xtext.ui.resource.IResourceUIServiceProvider
-
-2 errors
-
+!ENTRY org.eclipse.core.resources 2 75 2016-02-24 09:48:32.916
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.core.resources 2 566 2016-02-24 09:48:32.916
+!MESSAGE org/eclipse/viatra/cep/vepl/VeplRuntimeModule
 !STACK 0
-com.google.inject.ProvisionException: Guice provision errors:
-
-1) null returned by binding at org.eclipse.xtext.ui.shared.SharedStateModule.configureIWorkbench(SharedStateModule.java:141)
- but org.eclipse.xtext.ui.editor.LanguageSpecificURIEditorOpener.workbench is not @Nullable
-  while locating org.eclipse.ui.IWorkbench
-    for field at org.eclipse.xtext.ui.editor.LanguageSpecificURIEditorOpener.workbench(Unknown Source)
-  while locating org.eclipse.xtext.xbase.ui.jvmmodel.navigation.DerivedMemberAwareEditorOpener
-  while locating org.eclipse.xtext.ui.editor.IURIEditorOpener annotated with @org.eclipse.xtext.ui.LanguageSpecific()
-    for field at org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider.uriEditorOpener(Unknown Source)
-  while locating org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider
-  while locating org.eclipse.xtext.ui.resource.IResourceUIServiceProvider
-
-2) null returned by binding at org.eclipse.xtext.ui.shared.SharedStateModule.configureIWorkbench(SharedStateModule.java:141)
- but org.eclipse.xtext.ui.label.DefaultEditorImageUtil.workbench is not @Nullable
-  while locating org.eclipse.ui.IWorkbench
-    for field at org.eclipse.xtext.ui.label.DefaultEditorImageUtil.workbench(Unknown Source)
-  while locating org.eclipse.xtext.ui.label.DefaultEditorImageUtil
-    for field at org.eclipse.xtext.ui.label.DefaultDescriptionLabelProvider.imageUtil(Unknown Source)
-  while locating org.eclipse.incquery.patternlanguage.emf.ui.labeling.EMFPatternLanguageDescriptionLabelProvider
-  while locating org.eclipse.jface.viewers.ILabelProvider annotated with @org.eclipse.xtext.ui.resource.ResourceServiceDescriptionLabelProvider()
-    for field at org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider.descriptionLabelProvider(Unknown Source)
-  while locating org.eclipse.xtext.ui.resource.DefaultResourceUIServiceProvider
-  while locating org.eclipse.xtext.ui.resource.IResourceUIServiceProvider
-
-2 errors
-	at com.google.inject.internal.InjectorImpl$4.get(InjectorImpl.java:987)
-	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
-	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+java.lang.NoClassDefFoundError: org/eclipse/viatra/cep/vepl/VeplRuntimeModule
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getRuntimeModule(VeplActivator.java:77)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.createInjector(VeplActivator.java:63)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getInjector(VeplActivator.java:55)
+	at org.eclipse.viatra.cep.vepl.ui.VeplExecutableExtensionFactory.getInjector(VeplExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
 	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
 	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
-	at org.eclipse.xtext.internal.ResourceServiceProviderDescriptor.get(ResourceServiceProviderDescriptor.java:40)
-	at org.eclipse.xtext.resource.impl.ResourceServiceProviderRegistryImpl$InternalData.getServiceProvider(ResourceServiceProviderRegistryImpl.java:46)
-	at org.eclipse.xtext.resource.impl.ResourceServiceProviderRegistryImpl.getResourceServiceProvider(ResourceServiceProviderRegistryImpl.java:109)
-	at org.eclipse.xtext.resource.impl.ResourceServiceProviderRegistryImpl.getResourceServiceProvider(ResourceServiceProviderRegistryImpl.java:129)
-	at org.eclipse.xtext.ui.resource.UriValidator.isValid(UriValidator.java:27)
-	at org.eclipse.xtext.ui.resource.Storage2UriMapperImpl.isValidUri(Storage2UriMapperImpl.java:247)
-	at org.eclipse.xtext.ui.resource.Storage2UriMapperImpl.getUri(Storage2UriMapperImpl.java:233)
-	at org.eclipse.xtext.builder.impl.ToBeBuiltComputer.getUri(ToBeBuiltComputer.java:345)
-	at org.eclipse.xtext.builder.impl.ToBeBuiltComputer.updateStorage(ToBeBuiltComputer.java:287)
-	at org.eclipse.xtext.builder.impl.ToBeBuiltComputer$2.visit(ToBeBuiltComputer.java:260)
-	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:119)
-	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:83)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
-	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:93)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:51)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:116)
-	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
-	at org.eclipse.xtext.builder.impl.ToBeBuiltComputer.updateProject(ToBeBuiltComputer.java:254)
-	at org.eclipse.xtext.builder.impl.XtextBuilder.fullBuild(XtextBuilder.java:279)
-	at org.eclipse.xtext.builder.impl.XtextBuilder.build(XtextBuilder.java:117)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:901)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:854)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:546)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:575)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:243)
 	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
 	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
@@ -964,31 +35,86 @@ com.google.inject.ProvisionException: Guice provision errors:
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SESSION 2016-02-19 17:44:06.111 -----------------------------------------------
-eclipse.buildId=4.5.1.M20150904-0015
-java.version=1.7.0_79
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
-Framework arguments:  -product org.eclipse.epp.package.modeling.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-19 17:45:07.396
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2016-02-22 13:09:53.429 -----------------------------------------------
-eclipse.buildId=4.5.1.M20150904-0015
-java.version=1.7.0_79
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=hu_HU
-Framework arguments:  -product org.eclipse.epp.package.modeling.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+!ENTRY org.eclipse.core.resources 4 2 2016-02-24 09:48:33.068
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/viatra/cep/vepl/VeplRuntimeModule
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getRuntimeModule(VeplActivator.java:77)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.createInjector(VeplActivator.java:63)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getInjector(VeplActivator.java:55)
+	at org.eclipse.viatra.cep.vepl.ui.VeplExecutableExtensionFactory.getInjector(VeplExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:901)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:854)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:546)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:575)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:243)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.egit.ui 2 0 2016-02-22 13:10:56.134
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\Mate'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!ENTRY org.eclipse.core.resources 2 75 2016-02-24 09:48:33.079
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.core.resources 2 566 2016-02-24 09:48:33.079
+!MESSAGE org/eclipse/viatra/cep/vepl/VeplRuntimeModule
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/viatra/cep/vepl/VeplRuntimeModule
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getRuntimeModule(VeplActivator.java:77)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.createInjector(VeplActivator.java:63)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getInjector(VeplActivator.java:55)
+	at org.eclipse.viatra.cep.vepl.ui.VeplExecutableExtensionFactory.getInjector(VeplExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:901)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:854)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:546)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:575)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:243)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-02-24 09:48:35.727
+!MESSAGE An internal error occurred during: "Launching Eclipse Application".
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/viatra/cep/vepl/VeplRuntimeModule
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getRuntimeModule(VeplActivator.java:77)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.createInjector(VeplActivator.java:63)
+	at org.eclipse.viatra.cep.vepl.ui.internal.VeplActivator.getInjector(VeplActivator.java:55)
+	at org.eclipse.viatra.cep.vepl.ui.VeplExecutableExtensionFactory.getInjector(VeplExecutableExtensionFactory.java:26)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:51)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:901)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:854)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:546)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:575)
+	at org.eclipse.core.internal.events.BuildManager.getRule(BuildManager.java:1121)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:550)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:534)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:111)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate$1.run(LaunchConfigurationDelegate.java:430)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildProjects(LaunchConfigurationDelegate.java:437)
+	at org.eclipse.debug.core.model.LaunchConfigurationDelegate.buildForLaunch(LaunchConfigurationDelegate.java:130)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

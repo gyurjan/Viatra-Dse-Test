@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="impl.PetriNetFactoryImpl"/>
-<fullyQualifiedTypeName name="PetriNet.PetriNetFactory"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.ResultSetMetaData"/>
@@ -23,9 +22,7 @@
 <fullyQualifiedTypeName name="petrinet.util.TranCanFireProcessor"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="bus.Activator"/>
-<fullyQualifiedTypeName name="PetriNet.Token"/>
 <fullyQualifiedTypeName name="impl.TokenImpl"/>
-<fullyQualifiedTypeName name="PetriNet.PetriNet"/>
 <fullyQualifiedTypeName name="petrinet.util.AllTokenEndQuerySpecification"/>
 <fullyQualifiedTypeName name="org.eclipse.viatra.dse.objectives.impl.ModelQueriesGlobalConstraint"/>
 <fullyQualifiedTypeName name="org.apache.derby.iapi.sql.ResultSet"/>
@@ -39,7 +36,6 @@
 <fullyQualifiedTypeName name="org.eclipse.emf.common.notify.Notifier"/>
 <fullyQualifiedTypeName name="petrinet.mypetri.PetriModel"/>
 <fullyQualifiedTypeName name="org.eclipse.emf.common.util.EList"/>
-<fullyQualifiedTypeName name="PetriNet.Place"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.awt.Event"/>
@@ -49,4 +45,10 @@
 <fullyQualifiedTypeName name="org.eclipse.viatra.dse.objectives.impl.ModelQueriesHardObjective"/>
 <fullyQualifiedTypeName name="org.eclipse.viatra.dse.solutionstore.SimpleSolutionStore"/>
 <fullyQualifiedTypeName name="org.eclipse.viatra.dse.api.Strategies"/>
+<fullyQualifiedTypeName name="PetriNet.Place"/>
+<fullyQualifiedTypeName name="PetriNet.PetriNet"/>
+<fullyQualifiedTypeName name="PetriNet.PetriNetFactory"/>
+<fullyQualifiedTypeName name="com.oracle.jrockit.jfr.Transition"/>
+<fullyQualifiedTypeName name="PetriNet.Token"/>
+<fullyQualifiedTypeName name="PetriNet.Transition"/>
 </qualifiedTypeNameHistroy>
